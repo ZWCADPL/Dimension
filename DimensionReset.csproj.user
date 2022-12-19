@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ReferencePath>F:\____ZWCAD\ZWCAD 2023\Official\ZWCAD_2023_ZRXSDK\inc\</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartProgram>C:\Program Files\ZWSOFT\ZWCAD 2023\zwcad.exe</StartProgram>
+    <StartAction>Program</StartAction>
+    <StartArguments> /product ZWCAD /p Default</StartArguments>
+  </PropertyGroup>
+</Project>
