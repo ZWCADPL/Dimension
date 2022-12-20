@@ -50,9 +50,7 @@ namespace DimensionReset
             string result = dim.Prefix;
             string decseparator = ".";
             result += "{" + "0:"+ "0" + decseparator + new string ('#', dimdec(dim)) + "}";
-            //result = "{0:0.##}";
             result += dim.Suffix;
-
             return result;
         }
 
@@ -61,10 +59,9 @@ namespace DimensionReset
             NumberFormatInfo curent = CultureInfo.CurrentCulture.NumberFormat;
 
             NumberFormatInfo result = (NumberFormatInfo)NumberFormatInfo.CurrentInfo.Clone();
-
-            
-
-            result.NumberDecimalDigits = dimdec(dim);
+                       
+            // result.NumberDecimalDigits = dimdec(dim);
+            result.NumberDecimalDigits = 4;  // 
             result.NumberDecimalSeparator = dim.Dimdsep.ToString();
             result.NumberGroupSeparator = "";
             
