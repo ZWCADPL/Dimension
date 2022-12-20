@@ -16,7 +16,7 @@ namespace DimensionReset
 {
     public class DimensionReset_cmd
     {
-        [CommandMethod("dimspy")]
+        [CommandMethod("dimreset")]
         static public void Run()
         {
             DimensionReset_cmd cmd = new DimensionReset_cmd();

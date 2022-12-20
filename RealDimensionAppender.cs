@@ -50,7 +50,9 @@ namespace DimensionReset
             string result = dim.Prefix;
             string decseparator = ".";
             result += "{" + "0:"+ "0" + decseparator + new string ('#', dimdec(dim)) + "}";
+            //result = "{0:0.##}";
             result += dim.Suffix;
+
             return result;
         }
 
