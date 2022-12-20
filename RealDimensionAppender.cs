@@ -60,8 +60,8 @@ namespace DimensionReset
 
             NumberFormatInfo result = (NumberFormatInfo)NumberFormatInfo.CurrentInfo.Clone();
                        
-            // result.NumberDecimalDigits = dimdec(dim);
-            result.NumberDecimalDigits = 4;  // 
+            result.NumberDecimalDigits = dimdec(dim);
+            // result.NumberDecimalDigits = 4;  // 
             result.NumberDecimalSeparator = dim.Dimdsep.ToString();
             result.NumberGroupSeparator = "";
             

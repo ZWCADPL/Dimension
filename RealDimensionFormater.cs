@@ -49,7 +49,7 @@ namespace DimensionReset
         {
             foreach (ObjectId item in Items)
             {
-                SetValue(item);
+                Evaluate(item);
             }
         }
 
@@ -59,7 +59,7 @@ namespace DimensionReset
         }
 
 
-        private void SetValue(ObjectId item)
+        private void Evaluate(ObjectId item)
         {
             Dimension dim = Tr.GetObject(item, OpenMode.ForWrite, false) as Dimension;
             if (dim == null)
